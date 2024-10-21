@@ -26,7 +26,7 @@ const fire = <T>(
   return event;
 };
 
-@customElement('form-plugin-textfield')
+@customElement('sonardyne-form-plugin-textfield')
 export class NintexSampleTextfield extends LitElement {
   static styles = styles;
 
