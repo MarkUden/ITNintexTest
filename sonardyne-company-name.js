@@ -3,7 +3,7 @@ import { html,LitElement} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-a
 export class CompanyName extends LitElement {
   
   static properties = {
-    who: {type: String},
+    company: {type: String},
   };
   
   // return a promise for contract changes.
@@ -11,12 +11,12 @@ export class CompanyName extends LitElement {
     return {
       controlName: 'Company Name',
       fallbackDisableSubmit: false,
-      version: '1.2',
+      version: '1.3',
       properties: {
-        who: {
+        company: {
           type: 'string',
-          title: 'Who',
-          description: 'Sonardyne'
+          title: 'Company',
+          description: 'Enter a company name'
         }
       }
     };
@@ -24,11 +24,11 @@ export class CompanyName extends LitElement {
   
   constructor() {
     super();
-    this.who = 'Company Name';
+    this.company = 'Company Name';
   }
 
   render() {
-    return html`<p>Hello ${this.who}<p/>`;
+    return html`<p>Hello ${this.company}<p/>`;
   }
 }
 
