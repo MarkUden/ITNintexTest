@@ -24,11 +24,11 @@ export class CompanyName extends LitElement {
   
   constructor() {
     super();
-    this.title = 'Sonardyne';
+    this.name = 'Sonardyne';
   }
 
   render() {
-    return html`<p>Hello ${this.title}<p/>`;
+    return html`<p>Hello ${this.name}<p/>`;
   }
 }
 
