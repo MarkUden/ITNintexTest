@@ -15,8 +15,8 @@ export class CompanyName extends LitElement {
       properties: {
         who: {
           type: 'string',
-          title: 'Name',
-          description: 'Name of Company'
+          title: 'Who',
+          description: 'Sonardyne'
         }
       }
     };
@@ -24,11 +24,11 @@ export class CompanyName extends LitElement {
   
   constructor() {
     super();
-    this.name = 'Sonardyne';
+    this.who = 'Company Name';
   }
 
   render() {
-    return html`<p>Hello ${this.name}<p/>`;
+    return html`<p>Hello ${this.who}<p/>`;
   }
 }
 
