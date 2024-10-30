@@ -3,7 +3,7 @@ import { html,LitElement} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-a
 export class CompanyName extends LitElement {
   
   static properties = {
-    company: {type: String},
+    who: {type: String},
   };
   
   // return a promise for contract changes.
