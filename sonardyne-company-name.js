@@ -13,9 +13,9 @@ export class CompanyName extends LitElement {
       fallbackDisableSubmit: false,
       version: '1.3',
       properties: {
-        company: {
+        who: {
           type: 'string',
-          title: 'Company',
+          title: 'Who',
           description: 'Enter a company name'
         }
       }
@@ -24,11 +24,11 @@ export class CompanyName extends LitElement {
   
   constructor() {
     super();
-    this.company = 'Company Name';
+    this.who = 'Company Name';
   }
 
   render() {
-    return html`<p>Hello ${this.company}<p/>`;
+    return html`<p>Hello ${this.who}<p/>`;
   }
 }
 
